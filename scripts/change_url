@@ -29,6 +29,12 @@ ynh_change_url_nginx_config
 # MODIFY CONFIGURATION
 #=================================================
 
+if [ "$path" = "/" ]; then
+		conf_path=""
+	else
+		conf_path=$path
+fi
+
 ynh_add_config -t default.json -d "$install_dir/config/default.json"
 
 #=================================================
