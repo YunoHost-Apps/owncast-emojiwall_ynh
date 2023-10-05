@@ -5,5 +5,11 @@
         "port": __PORT__,
         "public_port": 443,
         "schema": "https"
+    },
+    "analytics": {
+        "enable": false,
+        "domain": "",
+        "scriptSource": "",
+        "dataEndpoint": ""
     }
 }
