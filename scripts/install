@@ -20,6 +20,12 @@ ynh_setup_source -d "$install_dir"
 
 chown -R $app:www-data "$install_dir"
 
+if [ "$path" = "/" ]; then
+		conf_path=""
+	else
+		conf_path=$path
+fi
+
 ynh_install_nodejs --nodejs_version=$nodejs_version
 ynh_use_nodejs
 npm --prefix "$install_dir" install
