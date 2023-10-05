@@ -1,0 +1,9 @@
+{
+    "webhooks": {
+        "host": "localhost",
+        "prefix": "__PATH__",
+        "port": __PORT__,
+        "public_port": 443,
+        "schema": "https"
+    },
+}
