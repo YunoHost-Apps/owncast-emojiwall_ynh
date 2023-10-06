@@ -12,8 +12,8 @@ maintainers = ["the7thNightmare"]
 
 [upstream]
 license = "MIT"
-code = "https://framagit.org/owncast-things/owncast-emojiwall"
 website = "https://smol.stream/emojiwall"
+code = "https://framagit.org/owncast-things/owncast-emojiwall"
 
 [integration]
 yunohost = ">= 11.2"
