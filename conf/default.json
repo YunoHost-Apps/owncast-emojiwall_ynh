@@ -1,7 +1,7 @@
 {
     "webhooks": {
         "host": "__DOMAIN__",
-        "prefix": "__CONF_PATH__",
+        "prefix": "__PATH__",
         "port": __PORT__,
         "public_port": 443,
         "schema": "https"
