@@ -40,7 +40,7 @@ chown $app:$app "$install_dir/config/default.json"
 #=================================================
 # START SYSTEMD SERVICE
 #=================================================
-ynh_script_progression -m "Starting the systemd service..." -w 1
+ynh_script_progression --message="Starting the systemd service..." --weight=1
 
 ynh_systemd_action --service_name=$app --action="start" --log_path="systemd"
 
@@ -48,4 +48,4 @@ ynh_systemd_action --service_name=$app --action="start" --log_path="systemd"
 # END OF SCRIPT
 #=================================================
 
-ynh_script_progression -m "Change of URL completed for $app" -l
+ynh_script_progression --message="Change of URL completed for $app" --last
