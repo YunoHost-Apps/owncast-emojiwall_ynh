@@ -1,16 +1,16 @@
 packaging_format = 2
 
-id = "emojiwall"
+id = "owncast-emojiwall"
 name = "Owncast Emoji Wall"
 description.en = "Emojiwall (on-screen emotes overlay) for Owncast"
 description.id = "Dinding emoji (tayangan emoji dalam layar) untuk Owncast"
 
-version = "1.1.2"
+version = "1.1.2~ynh1"
 
 maintainers = ["the7thNightmare"]
 
 [upstream]
-license = "AGPL-3.0"
+license = "MIT"
 code = "https://framagit.org/owncast-things/owncast-emojiwall"
 website = "https://smol.stream/emojiwall"
 
