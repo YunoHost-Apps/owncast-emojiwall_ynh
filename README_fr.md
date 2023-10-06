@@ -16,7 +16,7 @@ Si vous n’avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) po
 
 ## Vue d’ensemble
 
-The emoji wall (also known as a "on-screen emotes overlay") takes the emojis and custom emotes sent in the chat of Owncast streamers and displays them bubbling up the screen!
+Emojiwall (également connu sous le nom de « superposition d'émoticônes à l'écran ») prend les émojis et les émoticônes personnalisées envoyés dans le chat des streamers Owncast et les affiche en bouillonnant sur l'écran !
 
 
 **Version incluse :** 1.1.2~ynh1
