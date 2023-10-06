@@ -69,7 +69,7 @@ yunohost service add $app --description="Emojiwall for Owncast" --log="/var/log/
 # 		conf_path=$path
 # fi
 
-# ynh_add_config -t default.json -d "$install_dir/config/default.json"
+#ynh_add_config --template="../conf/default.json" --destination="$install_dir/config/default.json"
 
 #chmod 400 "$install_dir/config/default.json"
 #chown $app:$app "$install_dir/config/default.json"
