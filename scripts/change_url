@@ -28,24 +28,12 @@ ynh_change_url_nginx_config
 #=================================================
 # MODIFY CONFIGURATION
 #=================================================
+ynh_script_progression --message="Adding a configuration file..." --weight=1
 
-if [ $change_path -eq 1 ]
-then
-	if [ "$new_path" = "/" ]; then
-			conf_path=""
-		else
-			conf_path=$new_path
-	fi
-else
-	conf_path=$path
-fi
+ynh_add_config --template="../conf/default.json" --destination="$install_dir/config/default.json"
 
-if [ $change_domain -eq 1 ]
-then
-	domain=$new_domain
-fi
-
-ynh_add_config -t default.json -d "$install_dir/config/default.json"
+chmod 400 "$install_dir/config/default.json"
+chown $app:$app "$install_dir/config/default.json"
 
 #=================================================
 # GENERIC FINALISATION
@@ -54,7 +42,7 @@ ynh_add_config -t default.json -d "$install_dir/config/default.json"
 #=================================================
 ynh_script_progression -m "Starting the systemd service..." -w 1
 
-ynh_systemd_action -a start
+ynh_systemd_action --service_name=$app --action="start" --log_path="systemd"
 
 #=================================================
 # END OF SCRIPT
