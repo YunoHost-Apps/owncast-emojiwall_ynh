@@ -1,0 +1,1 @@
+Emojiwall (également connu sous le nom de « superposition d'émoticônes à l'écran ») prend les émojis et les émoticônes personnalisées envoyés dans le chat des streamers Owncast et les affiche en bouillonnant sur l'écran !

@@ -3,6 +3,7 @@ packaging_format = 2
 id = "owncast-emojiwall"
 name = "Emojiwall for Owncast"
 description.en = "Emojiwall (on-screen emotes overlay) for Owncast"
+description.fr = "Emojiwall (superposition d'émoticônes à l'écran) pour Owncast"
 description.id = "Dinding emoji (tayangan emoji dalam layar) untuk Owncast"
 
 version = "1.1.2~ynh1"
@@ -11,8 +12,8 @@ maintainers = ["the7thNightmare"]
 
 [upstream]
 license = "MIT"
-code = "https://framagit.org/owncast-things/owncast-emojiwall"
 website = "https://smol.stream/emojiwall"
+code = "https://framagit.org/owncast-things/owncast-emojiwall"
 
 [integration]
 yunohost = ">= 11.2"
@@ -21,7 +22,7 @@ multi_instance = true
 ldap = false
 sso = false
 disk = "50M"
-ram.build = "50M"
+ram.build = "200M"
 ram.runtime = "50M"
 
 [install]
@@ -52,6 +53,3 @@ ram.runtime = "50M"
     main.url = "/"
 
     [resources.ports]
-
-    [resources.apt]
-    packages = ""
