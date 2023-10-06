@@ -14,14 +14,14 @@ source /usr/share/yunohost/helpers
 #=================================================
 # STOP SYSTEMD SERVICE
 #=================================================
-ynh_script_progression -m "Stopping the systemd service..." -w 1
+ynh_script_progression --message="Stopping a systemd service..." --weight=1
 
-ynh_systemd_action -a stop
+ynh_systemd_action --service_name=$app --action="stop" --log_path="/var/log/$app/$app.log"
 
 #=================================================
 # MODIFY URL IN NGINX CONF
 #=================================================
-ynh_script_progression -m "Updating NGINX web server configuration..." -w 1
+ynh_script_progression --message="Updating NGINX web server configuration..." --weight=1
 
 ynh_change_url_nginx_config
 

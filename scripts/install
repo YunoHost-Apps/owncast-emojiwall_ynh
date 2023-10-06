@@ -10,55 +10,73 @@ source _common.sh
 source /usr/share/yunohost/helpers
 
 #=================================================
+# INSTALL DEPENDENCIES
+#=================================================
+ynh_script_progression --message="Installing dependencies..." --weight=10
+
+# Install Nodejs
+ynh_exec_warn_less ynh_install_nodejs --nodejs_version=$nodejs_version
+
+#=================================================
 # APP "BUILD" (DEPLOYING SOURCES, VENV, COMPILING ETC)
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
-ynh_script_progression -m "Setting up source files..." -w 1
+ynh_script_progression --message="Setting up source files..." --weight=1
 
-ynh_setup_source -d "$install_dir"
+# Download, check integrity, uncompress and patch the source from app.src
+ynh_setup_source --dest_dir="$install_dir"
 
 chown -R $app:www-data "$install_dir"
 
-if [ "$path" = "/" ]; then
-		conf_path=""
-	else
-		conf_path=$path
-fi
-
-ynh_install_nodejs --nodejs_version=$nodejs_version
-ynh_use_nodejs
-npm --prefix "$install_dir" install
-ynh_add_config -t default.json -d "$install_dir/config/default.json"
+# if [ "$path" = "/" ]; then
+# 		conf_path=""
+# 	else
+# 		conf_path=$path
+# fi
 
 #=================================================
 # SYSTEM CONFIGURATION
 #=================================================
-ynh_script_progression -m "Adding system configurations related to $app..." -w 1
+ynh_script_progression --message"Adding system configurations related to $app..." --weight=1
 
 ynh_add_nginx_config
 
 ynh_add_systemd_config
 
-#=================================================
-# APP INITIAL CONFIGURATION
-#=================================================
-# CONFIGURATION FOR SUBPATH
-#=================================================
-ynh_script_progression -m "Configuring the app..." -w 1
+yunohost service add $app --description="Emojiwall for Owncast" --log="/var/log/$app/$app.log"
 
-yunohost service add $app -d "Emojiwall for Owncast" -l "/var/log/$app/$app.log"
+#=================================================
+# ADD A CONFIGURATION
+#=================================================
+ynh_script_progression --message="Adding a configuration file..." --weight=1
+
+ynh_add_config --template="some_config_file" --destination="$install_dir/config/default.json"
+
+chmod 400 "$install_dir/config/default.json"
+chown $app:$app "$install_dir/config/default.json"
+
+#=================================================
+# CONFIGURE THE APP
+#=================================================
+ynh_script_progression --message="Configuring the app..." --weight=15
+
+pushd $install_dir
+	ynh_use_nodejs
+	ynh_exec_warn_less ynh_exec_as $app env $ynh_node_load_PATH $ynh_npm install
+popd
 
 #=================================================
 # GENERIC FINALIZATION
 #=================================================
 # START SYSTEMD SERVICE
 #=================================================
-ynh_script_progression -m "Starting a systemd service..." -w 1
+ynh_script_progression --message="Starting a systemd service..." --weight=1
 
-ynh_systemd_action -a start
+ynh_systemd_action --service_name=$app --action="start" --log_path="systemd"
 
 #=================================================
 # END OF SCRIPT
 #=================================================
-ynh_script_progression -m "Installation of $app completed" -l
+
+ynh_script_progression --message="Installation of $app completed" --last
