@@ -1,7 +1,7 @@
 packaging_format = 2
 
 id = "owncast-emojiwall"
-name = "Owncast Emoji Wall"
+name = "Emojiwall for Owncast"
 description.en = "Emojiwall (on-screen emotes overlay) for Owncast"
 description.id = "Dinding emoji (tayangan emoji dalam layar) untuk Owncast"
 
