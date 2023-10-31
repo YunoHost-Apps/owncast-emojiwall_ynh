@@ -29,6 +29,7 @@ Emojiwall (également connu sous le nom de « superposition d'émoticônes à l'
 
 * Site officiel de l’app : <https://smol.stream/emojiwall>
 * Dépôt de code officiel de l’app : <https://framagit.org/owncast-things/owncast-emojiwall>
+* YunoHost Store: <https://apps.yunohost.org/app/owncast-emojiwall>
 * Signaler un bug : <https://github.com/YunoHost-Apps/owncast-emojiwall_ynh/issues>
 
 ## Informations pour les développeurs
