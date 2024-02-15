@@ -29,6 +29,7 @@ The emoji wall (also known as a "on-screen emotes overlay") takes the emojis and
 
 * Official app website: <https://smol.stream/emojiwall>
 * Upstream app code repository: <https://framagit.org/owncast-things/owncast-emojiwall>
+* YunoHost Store: <https://apps.yunohost.org/app/owncast-emojiwall>
 * Report a bug: <https://github.com/YunoHost-Apps/owncast-emojiwall_ynh/issues>
 
 ## Developer info
