@@ -44,6 +44,7 @@ ram.runtime = "50M"
         url = "https://framagit.org/owncast-things/owncast-emojiwall/-/archive/v1.1.2/owncast-emojiwall-v1.1.2.tar.gz"
         sha256 = "e82834ace3b99d162d9bcc37babf9ededff1f29d9871df239cd05211d5882197"
         in_subdir = true
+        autoupdate.strategy = "latest_gitlab_release"
 
     [resources.system_user]
 
