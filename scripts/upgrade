@@ -38,7 +38,7 @@ if [ "$upgrade_type" == "UPGRADE_APP" ]
 then
 	ynh_script_progression --message="Upgrading source files..." --weight=1
 
-	ynh_setup_source -d "$install_dir" --keep="config/default.json"
+	ynh_setup_source -d "$install_dir" --full_replace=1 --keep="config/default.json"
 fi
 
 chown -R $app:www-data "$install_dir"
