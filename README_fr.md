@@ -5,7 +5,7 @@ Il NE doit PAS être modifié à la main.
 
 # Emojiwall for Owncast pour YunoHost
 
-[![Niveau d’intégration](https://dash.yunohost.org/integration/owncast-emojiwall.svg)](https://dash.yunohost.org/appci/app/owncast-emojiwall) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/owncast-emojiwall.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/owncast-emojiwall.maintain.svg)
+[![Niveau d’intégration](https://dash.yunohost.org/integration/owncast-emojiwall.svg)](https://ci-apps.yunohost.org/ci/apps/owncast-emojiwall/) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/owncast-emojiwall.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/owncast-emojiwall.maintain.svg)
 
 [![Installer Emojiwall for Owncast avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=owncast-emojiwall)
 
@@ -19,7 +19,7 @@ Il NE doit PAS être modifié à la main.
 Emojiwall (également connu sous le nom de « superposition d'émoticônes à l'écran ») prend les émojis et les émoticônes personnalisées envoyés dans le chat des streamers Owncast et les affiche en bouillonnant sur l'écran !
 
 
-**Version incluse :** 1.1.4~ynh1
+**Version incluse :** 1.1.4~ynh2
 
 ## Captures d’écran
 
