@@ -19,7 +19,7 @@ No se debe editar a mano.
 The emoji wall (also known as a "on-screen emotes overlay") takes the emojis and custom emotes sent in the chat of Owncast streamers and displays them bubbling up the screen!
 
 
-**Versión actual:** 1.1.4~ynh2
+**Versión actual:** 1.1.4~ynh3
 
 ## Capturas
 
