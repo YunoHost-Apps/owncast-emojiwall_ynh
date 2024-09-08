@@ -5,7 +5,7 @@ EZ editatu eskuz.
 
 # Emojiwall for Owncast YunoHost-erako
 
-[![Integrazio maila](https://dash.yunohost.org/integration/owncast-emojiwall.svg)](https://dash.yunohost.org/appci/app/owncast-emojiwall) ![Funtzionamendu egoera](https://ci-apps.yunohost.org/ci/badges/owncast-emojiwall.status.svg) ![Mantentze egoera](https://ci-apps.yunohost.org/ci/badges/owncast-emojiwall.maintain.svg)
+[![Integrazio maila](https://dash.yunohost.org/integration/owncast-emojiwall.svg)](https://ci-apps.yunohost.org/ci/apps/owncast-emojiwall/) ![Funtzionamendu egoera](https://ci-apps.yunohost.org/ci/badges/owncast-emojiwall.status.svg) ![Mantentze egoera](https://ci-apps.yunohost.org/ci/badges/owncast-emojiwall.maintain.svg)
 
 [![Instalatu Emojiwall for Owncast YunoHost-ekin](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=owncast-emojiwall)
 
@@ -19,7 +19,7 @@ EZ editatu eskuz.
 The emoji wall (also known as a "on-screen emotes overlay") takes the emojis and custom emotes sent in the chat of Owncast streamers and displays them bubbling up the screen!
 
 
-**Paketatutako bertsioa:** 1.1.4~ynh1
+**Paketatutako bertsioa:** 1.1.4~ynh2
 
 ## Pantaila-argazkiak
 
