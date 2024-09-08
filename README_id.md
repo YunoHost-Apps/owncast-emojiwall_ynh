@@ -28,7 +28,7 @@ Dinding emoji (atau bisa disebut juga "tayangan emoji dalam layar") mengambil em
 ## Dokumentasi dan sumber daya
 
 - Website aplikasi resmi: <https://smol.stream/emojiwall>
-- Repositori kode aplikasi hulu: <https://framagit.org/owncast-things/owncast-emojiwall>
+- Depot kode aplikasi hulu: <https://framagit.org/owncast-things/owncast-emojiwall>
 - Gudang YunoHost: <https://apps.yunohost.org/app/owncast-emojiwall>
 - Laporkan bug: <https://github.com/YunoHost-Apps/owncast-emojiwall_ynh/issues>
 
