@@ -1,4 +1,10 @@
 {
+    "logging": {
+        "level": "info"
+    },
+    "server": {
+        "trustProxy": 0
+    },
     "webhooks": {
         "host": "__DOMAIN__",
         "prefix": "__PATH__",
@@ -11,5 +17,32 @@
         "domain": "",
         "scriptSource": "",
         "dataEndpoint": ""
+    },
+    "chatOverlay": {
+        "defaultTheme": "default"
+    },
+    "security": {
+        "disableSsrfProtection": false
+    },
+    "rateLimit": {
+        "webhook": {
+            "enabled": true,
+            "windowMs": 60000,
+            "maxRequests": 200
+        }
+    },
+    "warning": {
+        "message": "",
+        "link1Url": "",
+        "link1Text": "",
+        "link2Url": "",
+        "link2Text": ""
+    },
+    "brand": {
+        "name": "smol overlays",
+        "tagline": "Chat overlay and emoji wall for Owncast streamers",
+        "description": "Free, open-source on-screen emote wall and chat overlay for Owncast.",
+        "logoFilename": "img/logo.png",
+        "supportHtml": ""
     }
 }
