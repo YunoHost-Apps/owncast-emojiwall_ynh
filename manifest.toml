@@ -16,7 +16,7 @@ website = "https://smol.stream/emojiwall"
 code = "https://framagit.org/owncast-things/owncast-emojiwall"
 
 [integration]
-yunohost = ">= 12.1.17"
+yunohost = ">= 12.1.38"
 helpers_version = "2.1"
 architectures = "all"
 multi_instance = true
