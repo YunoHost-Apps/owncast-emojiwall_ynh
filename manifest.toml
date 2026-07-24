@@ -6,7 +6,7 @@ description.en = "Emojiwall (on-screen emotes overlay) for Owncast"
 description.fr = "Emojiwall (superposition d'émoticônes à l'écran) pour Owncast"
 description.id = "Dinding emoji (tayangan emoji dalam layar) untuk Owncast"
 
-version = "1.1.4~ynh3"
+version = "2.1.0~ynh1"
 
 maintainers = ["the7thNightmare"]
 
@@ -42,8 +42,8 @@ ram.runtime = "50M"
     [resources.sources]
 
         [resources.sources.main]
-        url = "https://framagit.org/owncast-things/owncast-emojiwall/-/archive/v1.1.4/owncast-emojiwall-v1.1.4.tar.bz2"
-        sha256 = "4e136a7b9091247ee46365645a25bbc0014db89dd175dfe3601b056ff4e0ba11"
+        url = "https://framagit.org/owncast-things/owncast-emojiwall/-/archive/2.1.0/owncast-emojiwall-2.1.0.tar.bz2"
+        sha256 = "81d814192762d983f7dde09b98342faa544462dde3f17e5ac0cb9f8d7192e398"
         in_subdir = true
         autoupdate.strategy = "latest_gitlab_release"
 
