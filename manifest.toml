@@ -57,4 +57,4 @@ ram.runtime = "50M"
     [resources.ports]
 
     [resources.nodejs]
-    version = "18"
+    version = "22"
